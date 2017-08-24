@@ -1,14 +1,13 @@
-
 body {
 	background:#0E0E0E;
-	height:2239px; 
+	height:2200px; 
 	width:1024px;
 	margin: 0px auto;
 }
 
 #blocoprincipal {
 	background:#ffffff;
-	height:2239px; 
+	height:2210px; 
 }
 
 /* HEADER */
@@ -86,6 +85,7 @@ body {
 	width: 280px;
 	border: 4px solid #fff;
 	border-radius: 5px;
+	white-space: nowrap;
 }
 
 a.fontebotao {
@@ -126,7 +126,7 @@ li a.u {
 }
 
 li a:hover {
-    color: #FF7F00;
+	color: #FF7F00;
 }
 
 #material {
@@ -142,15 +142,27 @@ li a:hover {
 
 
 h2 {
-font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	font-weight: bold;
-	font-size: 35px;
+	font-size: 34px;
+
+	letter-spacing: 7px;
+	padding-bottom: 14px;
+	white-space: nowrap;
+
+}
+
+
+.laranjah {
 	color: #F16529;
 	text-transform: uppercase;
-	letter-spacing: 7px;
-	padding-bottom: 14+px;
 }
+
+.vermelhoh {
+	color: #A72D3A;
+}
+
 
 .matfont {
 	font-family: 'Montserrat', sans-serif;
@@ -158,7 +170,6 @@ font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
 	line-height: 20px;
 	letter-spacing: 0.5px;
-
 }
 
 p {
@@ -170,11 +181,11 @@ p {
 
 .mattexto {
 
-		text-align: justify;
-		padding-left: 400px;
-		padding-right: 30px;
-		padding-top: 40px;
-		position: absolute;	
+	text-align: justify;
+	padding-left: 400px;
+	padding-right: 30px;
+	padding-top: 40px;
+	position: absolute;	
 
 }
 
@@ -196,74 +207,82 @@ p {
 	border-bottom: 1px solid #e2e5eb;
 }
 
+.cxlegenda {
+
+	text-align: left;
+	margin-top: 190px;
+	margin-left: 15px;
+
+}
+
 .cxestudo {
 
-	margin-right: 7px;
-	margin-top: 10px;
-	margin-left: 5px;
+	margin-left: 14px;
 	width: 23%;
 	height: 337px;
 	position: relative;
-	display: inline-block;
+	display: block;
 	background-repeat: no-repeat;
 	background-position: center 0px;
-	
 	box-shadow: 2px 2px #D9D9D9;
 	border: 1px solid #D9D9D9;
-
+	float:left;
+	overflow: hidden;
 
 }
 
 .cxestudohtml {
 
-background-image: url("../images/html.png");
-background-color: #D65B43;
+	background-image: url("../images/html.png");
+	background-color: #D65B43;
 
 }
 
 .cxestudojs {
 
-background-image: url("../images/js.png");
-background-color: #F3CA4B;
+	background-image: url("../images/js.png");
+	background-color: #F3CA4B;
 
 }
 
 .cxestudohtmlcss {
 
-background-image: url("../images/html-css.png");
-background-color:#46B6E6;
+	background-image: url("../images/html-css.png");
+	background-color:#46B6E6;
 }
 
 .fonte {
-font-family: 'Montserrat', sans-serif;
-font-size: 15px;
-line-height: 20px;
-letter-spacing: 0.5px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+
 }
 
 .fontelegenda {
-	
-	
-color: #ffffff;
+
+	color: #ffffff;
+	position: absolute;
 
 }
 
 .fonteinfo {
 
 
-color: #333A4C;
-font-weight: bold;
+	color: #333A4C;
+	font-weight: bold;
 
 }
 
 .cxpartebranca {
 
-position: absolute;
-margin-top: 219px;
-
-background-color: #fff;
-width: 100%;
-height: 98px;
+	margin-top: 240px;
+	padding-top: 10px;
+	position: relative;
+	background-color: #fff;
+	width: 100%;
+	height: 98px;
+	bottom: 0;
 
 }
 
@@ -276,28 +295,92 @@ height: 98px;
 	margin-top: 20px;
 	border-radius: 7px;
 	font-family: 'Montserrat', sans-serif;
-	
-
 
 }
 
-.botaovermais {
+a.botaovermais {
 	background-color: #161310;
 	color: #fff;
 	width: 20%;
 	letter-spacing: 2px;
 	font-size: 17px;
+	text-decoration: none; 
+}
+
+a.botaovermais:hover {
+	color:#FF7F00;
 
 }
 
 .botaoestudaragora {
 
-	background-color: #FF7F00;
+	
 	color: #fff;
 	width: 90%;
 	letter-spacing: 2px;
 	font-weight: bold;
 	font-size: 15px;
-	
+	position: relative;
+	margin: 0px;
+	margin-top: 10px;
+}
+
+.laranja {
+	background-color: #FF7F00;
+}
+
+.vermelho {
+	background-color:	#A72D3A
+}
+
+#rails {
+
+	height:529px; 
+	width:1024px;
+	position:relative;
+	background-color: #ffffff;
+	display: inline-block;
+	text-align: center; 
+
+}
+
+.cxestudoruby {
+
+	background-image: url("../images/ruby.png");
+	background-color: #B21300;
+
+}
+
+.cxestudorails {
+
+	background-image: url("../images/rails.png");
+	background-color: #A72D3A;
+
+}
+
+.cxestudoheroku {
+
+	background-image: url("../images/heroku.png");
+	background-color:#8A2BFF;
+}
+
+#rodape {
+
+	width: 100%;
+	height: 70px;
+	background-color: #161310;
+	color: #fff;
+	text-align: center;
+	position: relative;font-weight: 500;
+}
+
+.rodapetexto {
+
+	width: 100%;
+	height: 60px;
+	position: absolute;
+	padding-top: 5px;
+
+
 
 }
